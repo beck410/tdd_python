@@ -18,10 +18,11 @@ from django.conf.urls import include, url
 from lists import views
 
 urlpatterns = [
+    url(r'^$', views.home_page, name='home'),
+    url(r'^lists/only-list-in-the-world/$', views.view_list, name='view_list'),
     # Examples:
     # url(r'^$', 'superlists.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
-    #url(r'^admin/', include(admin.site.urls)),
-    url(r'^$',views.home_page, name='home')
+    # url(r'^admin/', include(admin.site.urls)),
 ]

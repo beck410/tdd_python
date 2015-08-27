@@ -56,8 +56,8 @@ class NewVisitorTest(LiveServerTestCase):
         self._check_for_row_in_list_table('2: Use peacock feathers to make a fly')
 
         # The page updates again, and now shows both items on her list
-        self.check_for_row_in_list_table('2: Use peacock feathers to make a fly')
-        self.check_for_row_in_list_table('1: Buy peacock feathers')
+        self._check_for_row_in_list_table('2: Use peacock feathers to make a fly')
+        self._check_for_row_in_list_table('1: Buy peacock feathers')
 
         # Now a new user, Francis, comes along to the site.
 
